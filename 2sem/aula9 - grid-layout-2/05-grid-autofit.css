@@ -1,0 +1,17 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid #9f0627;
+    height: 600px; /*Altura fixa*/
+
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(auto-fit, minmax( 100px, 1fr)); /*Aqui a quantidade de colunas será autómatico. Ou sejá, caso eu venha a diminuir o container, ele vai se ajustar sozinho. Entretanto eu tenho que dar um minino. */
+}
+
+.item {
+    padding: 10px;
+    background-color: #fe6f8e;
+    color: white;
+    border: 10px solid #ff315e;
+}

@@ -1,0 +1,38 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid #9f0627;
+
+    display: grid;
+    grid-template-rows: 100px 300px 100px;
+    grid-template-columns: 3fr 1fr;
+    /* o minmax serve para deixar um limite caso eu vá diminuir a tela. */
+    grid-template-areas:
+        'header header' /*Ele ocupa duas colunas, por isso coloquei header header*/
+        'main aside'
+        'footer footer'
+        /*Estou dando nome as coisas*/
+}
+
+.item {
+    padding: 10px;
+    background-color: #fe6f8e;
+    color: white;
+    border: 10px solid #ff315e;
+}
+.item-1{
+    grid-area:header;
+}
+
+.item-2 {
+    grid-area:main;
+}
+
+.item-3{
+    grid-area:aside;
+}
+
+.item-4{
+    grid-area:footer
+}
+/* Nas seguintes coisas eu acabei dando nome aos itens para poder ajeitar eles da forma que eu queria no HTML */
