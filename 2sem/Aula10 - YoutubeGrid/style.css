@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    color:aliceblue;
+    font-family: Arial;
+}
+
+.video-box{
+    width:100%;
+}
+
+.video-box:hover{
+    cursor:pointer;
+}
+
+.thumb img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover ; /*Isso aqui faz com que a imagens não saia do formato original*/
+
+}
+.thumb{
+    position:relative;
+}
+
+.time{
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: rgba(37, 37, 37, 0.63);
+    pad:4px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 8px;
+    right:8px;
+}
+
+main {
+    padding: 100px 30px 0 200px;
+}
+
+.info{
+    display:grid;
+    grid-template-columns: 38px 1fr 24px;
+    align-items: start;
+    column-gap: 10px;
+    margin-top:8px;
+}
+
+.profile-img img {
+    width: 100%;
+    border-radius: 50%;
+    height: 38px;
+    object-fit:cover;
+}
+
+.info h2{
+    font-size:1rem;
+    margin: 5px 0 8px;
+}
+
+.info p {
+    font-family: 0.9rem;
+    color: aliceblue;
+    margin-bottom: 3px;
+}
+
+.post-date::before{
+    content:"•";
+    margin:0 1px; /*0 cima e baixo 4px direita e esquerda*/
+}
+
+.more svg{
+    fill:white;
+}
+
+.videos-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /*1fr é o maximo e 350 px é o minimo*/
+    column-gap: 20px ;
+    row-gap:40px;
+}
